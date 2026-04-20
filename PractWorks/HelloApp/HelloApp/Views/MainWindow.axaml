@@ -5,11 +5,24 @@
         xmlns:helloapp="using:HelloApp"
         xmlns:local="using:HelloApp.Views"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:net="using:System.Net"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HelloApp.Views.MainWindow"
         x:DataType="vm:HomeViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="HelloApp">
-
-    <local:RegistrationView/>
+    <StackPanel>
+        <ContentControl Content="{Binding CurrentPage}">
+            <ContentControl.DataTemplates>
+                <DataTemplate DataType="vm:AuthorizationViewModel">
+                    <local:AuthorizationView/>
+                </DataTemplate>
+                <DataTemplate DataType="vm:RegistrationViewModel">
+                    <local:RegistrationView />
+                </DataTemplate>
+           </ContentControl.DataTemplates>
+        </ContentControl>
+	    <Button Content="Авторизироваться" Command="{Binding AuthCommand}"/>
+	    <Button Content="Зарегистрироваться" Command="{Binding RegCommand}"/>
+    </StackPanel>
 </Window>
