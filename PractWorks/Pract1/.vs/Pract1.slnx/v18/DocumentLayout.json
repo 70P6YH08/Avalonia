@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|c:\\users\\-221\\students\\ispp31\\avalonia\\practworks\\pract1\\pract1\\views\\homeview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|solutionrelative:pract1\\views\\homeview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|c:\\users\\-221\\students\\ispp31\\avalonia\\practworks\\pract1\\pract1\\views\\homeview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|solutionrelative:pract1\\views\\homeview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|c:\\users\\-221\\students\\ispp31\\avalonia\\practworks\\pract1\\pract1\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|solutionrelative:pract1\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|c:\\users\\-221\\students\\ispp31\\avalonia\\practworks\\pract1\\pract1\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|solutionrelative:pract1\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|c:\\users\\-221\\students\\ispp31\\avalonia\\practworks\\pract1\\pract1\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|solutionrelative:pract1\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|c:\\users\\-221\\students\\ispp31\\avalonia\\practworks\\pract1\\pract1\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78C18B0E-5700-FB12-69CF-B3CE2AECEF1E}|Pract1\\Pract1.csproj|solutionrelative:pract1\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\Views\\HomeView.axaml.cs",
+              "RelativeDocumentMoniker": "Pract1\\Views\\HomeView.axaml.cs",
+              "ToolTip": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\Views\\HomeView.axaml.cs",
+              "RelativeToolTip": "Pract1\\Views\\HomeView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T06:37:40.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "Pract1\\ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "Pract1\\ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T06:44:28.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Pract1\\Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Pract1\\Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T06:29:54.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeView.axaml",
+              "DocumentMoniker": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\Views\\HomeView.axaml",
+              "RelativeDocumentMoniker": "Pract1\\Views\\HomeView.axaml",
+              "ToolTip": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\Views\\HomeView.axaml",
+              "RelativeToolTip": "Pract1\\Views\\HomeView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T06:37:40.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\ViewModels\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "Pract1\\ViewModels\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\ViewModels\\HomeViewModel.cs",
+              "RelativeToolTip": "Pract1\\ViewModels\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T06:45:18.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "Pract1\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\Pract1\\Pract1\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "Pract1\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T06:29:53.443Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 794,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
+using HelloApp.ViewModels;
+
+namespace HelloApp.Views;
+
+public partial class RegistrationView : UserControl
+{
+    public RegistrationView()
+    {
+        InitializeComponent();
+        DataContext = new RegistrationViewModel();
+    }
+}

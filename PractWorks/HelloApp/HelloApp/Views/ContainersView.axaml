@@ -1,0 +1,34 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HelloApp.Views.ContainersView">
+    
+        <DockPanel Height="400" Width="700">
+            <Grid Grid.RowDefinitions ="*,2*" Grid.ColumnDefinitions ="Auto, 100">
+                <Rectangle Grid.Row="0" Grid.Column="0" Fill="Violet"/>
+                <Rectangle Grid.Row="0" Grid.Column="1" Fill="Magenta"/>
+                <Rectangle Grid.Row="1" Grid.Column="0" Fill="Blue"/>
+                <Rectangle Grid.Row="1" Grid.Column="1" Fill="DarkBlue"/>
+            </Grid>
+
+		    <Rectangle DockPanel.Dock="Top" Height="100" Fill="Red"/>
+		    <Rectangle DockPanel.Dock="Left" Width="100" Fill="Green"/>
+		    <Rectangle DockPanel.Dock="Bottom" Height="100" Fill="Yellow"/>
+		    <Rectangle DockPanel.Dock="Right" Width="100" Fill="Black"/>
+		    <Rectangle Fill="Pink"/>
+        <StackPanel Orientation="Horizontal">
+		    <TextBlock Height="20" Width="50" Text="asdasd"/>
+		    <TextBlock Height="30" Width="70" Text="asdasd"/>
+		    <TextBlock Height="40" Width="90" Text="asdasd"/>
+		    <TextBlock Height="50" Width="110" Text="asdasd"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+		    <TextBlock Height="20" Width="50" Text="asdasd"/>
+		    <TextBlock Height="30" Width="70" Text="asdasd"/>
+		    <TextBlock Height="40" Width="90" Text="asdasd"/>
+		    <TextBlock Height="50" Width="110" Text="asdasd"/>
+        </StackPanel>
+        </DockPanel>
+</UserControl>

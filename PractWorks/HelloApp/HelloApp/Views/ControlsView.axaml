@@ -1,0 +1,45 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HelloApp.Views.ControlsView">
+  <StackPanel Height="700">
+	  <TextBlock Text="textblock:">
+          <Span Background="Yellow" FontSize="20" TextDecorations="Underline">
+		    <Run Text="run" Foreground="Blue"/>
+		    <Run Text="run" Foreground="Red"/>
+          </Span>
+          <LineBreak/>
+		  <Run Text="run" Foreground="Green" FontSize="30" FontStyle="Italic"/>
+		  <Run Text="run" Foreground="Black" FontSize="30" FontWeight="Bold"/>
+          <InlineUIContainer BaselineAlignment="Baseline">
+			<Image 
+				Width="32" 
+				Height="32" 
+				VerticalAlignment="Top" 
+				Source="/Assets/avalonia-logo.ico" />
+			</InlineUIContainer>
+		  <InlineUIContainer>
+			  <Button Content="Кнопка"/>
+		  </InlineUIContainer>
+      </TextBlock>
+	  <TextBox Watermark="Логин" Width="200"/>
+	  <TextBox Watermark="Пароль" Width="200" PasswordChar="*"/>
+	  <TextBox Watermark="Email" Width="200" TextInputOptions.ContentType="Email"/>
+	  <TextBox Watermark="Код" Width="200" TextInputOptions.ContentType="Digits"/>
+	  <CheckBox/>
+	  <RadioButton GroupName="Малина"/>
+	  <RadioButton GroupName="Малина"/>
+	  <RadioButton GroupName="Нет"/>
+	  <RadioButton GroupName="Нет"/>
+	  <CalendarDatePicker SelectedDate="{Binding SelectedDate}"/>
+	  <Label Content="{Binding Age}"/>
+	  <ComboBox ItemsSource="{Binding Languages}"
+          SelectedItem="{Binding SelectedLanguage}"
+          PlaceholderText="Select a language"/>
+	  <Slider Minimum="0.0" Maximum="1.0" Value="{Binding SelectedSliderValue}"/>
+	  <Rectangle Fill = "Red" Width="500" Height="50" Opacity="{Binding Opacity}"/>
+	  <ToggleSwitch OnContent="ВКЛ" OffContent="ВЫКЛ"/>
+  </StackPanel>
+</UserControl>

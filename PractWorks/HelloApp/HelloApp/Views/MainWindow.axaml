@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:HelloApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:helloapp="using:HelloApp"
+        xmlns:local="using:HelloApp.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="HelloApp.Views.MainWindow"
+        x:DataType="vm:HomeViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="HelloApp">
+
+    <local:RegistrationView/>
+</Window>

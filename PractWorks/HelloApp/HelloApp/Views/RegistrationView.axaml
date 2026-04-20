@@ -1,0 +1,14 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HelloApp.Views.RegistrationView">
+  <StackPanel>
+	  <TextBox Watermark="Логин" Text="{Binding Creditionals.Login}"/>
+	  <TextBox Watermark="Пароль" Text="{Binding Creditionals.Password}"/>
+	  <TextBox Watermark="Подтверждение пароля" Text="{Binding Creditionals.RepeatPassword}"/>
+	  <TextBox Watermark="Email" Text="{Binding Creditionals.Email}"/>
+	  <TextBox Watermark="Номер телефона" Text="{Binding Creditionals.Phone}"/>
+  </StackPanel>
+</UserControl>
