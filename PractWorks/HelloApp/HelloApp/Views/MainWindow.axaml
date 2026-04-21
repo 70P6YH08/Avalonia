@@ -1,4 +1,4 @@
-<Window xmlns="https://github.com/avaloniaui"
+﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:HelloApp.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -12,17 +12,10 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="HelloApp">
     <StackPanel>
-        <ContentControl Content="{Binding CurrentPage}">
-            <ContentControl.DataTemplates>
-                <DataTemplate DataType="vm:AuthorizationViewModel">
-                    <local:AuthorizationView/>
-                </DataTemplate>
-                <DataTemplate DataType="vm:RegistrationViewModel">
-                    <local:RegistrationView />
-                </DataTemplate>
-           </ContentControl.DataTemplates>
+        <local:StylesView/>
+        <!--<ContentControl Content="{Binding CurrentPage}">
         </ContentControl>
 	    <Button Content="Авторизироваться" Command="{Binding AuthCommand}"/>
-	    <Button Content="Зарегистрироваться" Command="{Binding RegCommand}"/>
+	    <Button Content="Зарегистрироваться" Command="{Binding RegCommand}"/>-->
     </StackPanel>
 </Window>

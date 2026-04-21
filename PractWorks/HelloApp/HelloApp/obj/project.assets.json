@@ -124,6 +124,22 @@
           }
         }
       },
+      "Avalonia.Controls.DataGrid/11.3.11": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.11"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Controls.DataGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Controls.DataGrid.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Avalonia.Desktop/11.3.11": {
         "type": "package",
         "dependencies": {
@@ -805,6 +821,25 @@
         "lib/netstandard2.0/Avalonia.Controls.ColorPicker.xml"
       ]
     },
+    "Avalonia.Controls.DataGrid/11.3.11": {
+      "sha512": "uC+LDVQeKmyXgHyX3t8FktkOOb77v9WIO+CPJq6/DwGiUt6PUq+ac/6was8syEzyP4VIx3qOfgTZdIT3bdAuSQ==",
+      "type": "package",
+      "path": "avalonia.controls.datagrid/11.3.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "avalonia.controls.datagrid.11.3.11.nupkg.sha512",
+        "avalonia.controls.datagrid.nuspec",
+        "lib/net6.0/Avalonia.Controls.DataGrid.dll",
+        "lib/net6.0/Avalonia.Controls.DataGrid.xml",
+        "lib/net8.0/Avalonia.Controls.DataGrid.dll",
+        "lib/net8.0/Avalonia.Controls.DataGrid.xml",
+        "lib/netstandard2.0/Avalonia.Controls.DataGrid.dll",
+        "lib/netstandard2.0/Avalonia.Controls.DataGrid.xml",
+        "readme.md"
+      ]
+    },
     "Avalonia.Desktop/11.3.11": {
       "sha512": "m60U1jV96RquwYGg4Pzwp0ENL1HUrM3YZLMCes0gWRn8x+webT9V4Wfs58MAdTOukXPpy9t1XhEd4NON674Wmw==",
       "type": "package",
@@ -1409,6 +1444,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Avalonia >= 11.3.11",
+      "Avalonia.Controls.DataGrid >= 11.3.11",
       "Avalonia.Desktop >= 11.3.11",
       "Avalonia.Diagnostics >= 11.3.11",
       "Avalonia.Fonts.Inter >= 11.3.11",
@@ -1417,23 +1453,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gorbu\\.nuget\\packages\\": {},
+    "C:\\NugetCache\\Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gorbu\\Desktop\\All\\collage\\3 year 2 semestr\\Avalonia\\PractWorks\\HelloApp\\HelloApp\\HelloApp.csproj",
+      "projectUniqueName": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\HelloApp\\HelloApp\\HelloApp.csproj",
       "projectName": "HelloApp",
-      "projectPath": "C:\\Users\\gorbu\\Desktop\\All\\collage\\3 year 2 semestr\\Avalonia\\PractWorks\\HelloApp\\HelloApp\\HelloApp.csproj",
-      "packagesPath": "C:\\Users\\gorbu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gorbu\\Desktop\\All\\collage\\3 year 2 semestr\\Avalonia\\PractWorks\\HelloApp\\HelloApp\\obj\\",
+      "projectPath": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\HelloApp\\HelloApp\\HelloApp.csproj",
+      "packagesPath": "C:\\NugetCache\\Packages",
+      "outputPath": "C:\\Users\\-221\\Students\\ispp31\\Avalonia\\PractWorks\\HelloApp\\HelloApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gorbu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\221\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1442,11 +1478,11 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -1461,14 +1497,17 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Avalonia": {
+            "target": "Package",
+            "version": "[11.3.11, )"
+          },
+          "Avalonia.Controls.DataGrid": {
             "target": "Package",
             "version": "[11.3.11, )"
           },
@@ -1509,7 +1548,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1792,7 +1831,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"Tmds.DBus.Protocol\" 0.21.2 есть известная уязвимость https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 (уровень серьезности: высокий уровень)",
+      "message": "У пакета \"Tmds.DBus.Protocol\" 0.21.2 есть известная уязвимость https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 (уровень серьезности: высокий)",
       "libraryId": "Tmds.DBus.Protocol",
       "targetGraphs": [
         "net10.0"

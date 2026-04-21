@@ -1,0 +1,56 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HelloApp.Views.UserListView">
+  <StackPanel>
+      <DockPanel>
+         <TextBlock Text="Логин: " FontSize="20"/>
+         <TextBox Text="{Binding Login}" FontSize="20" Width="70"/>
+         <TextBlock Text="Пароль: " FontSize="20"/>
+         <TextBox Text="{Binding Password}" FontSize="20" Width="70"/>
+         <Button Content="Добавить" Command="{Binding $parent[UserControl].DataContext.AddUserCommand}"/>
+      </DockPanel>
+	  <ListBox ItemsSource="{Binding Users}"
+               Width="450"
+               HorizontalAlignment="Left"
+               ScrollViewer.VerticalScrollBarVisibility="Visible"
+               MaxHeight="700">
+		  <ListBox.ItemTemplate>
+            <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Логин: " FontSize="20"/>
+                        <TextBlock Text="{Binding Login}" Margin="0,0,10,0" FontSize="20"/>
+                        <TextBlock Text="Пароль: " FontSize="20"/>
+                        <TextBlock Text="{Binding Password}" Margin="0,0,10,0" FontSize="20"/>
+                        <Button Content="Удалить"
+                                Command="{Binding $parent[UserControl].DataContext.DeleteUserCommand}"
+                                CommandParameter="{Binding}"/>
+                    </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+    <!--<DataGrid ItemsSource="{Binding Users}"
+              CanUserResizeColumns="True"
+              CanUserReorderColumns="True"
+              VerticalScrollBarVisibility="Visible"
+              Width="300"
+              HorizontalAlignment="Left"
+              >
+	  <DataGrid.Columns>
+        <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
+        <DataGridTextColumn Header="Пароль" Binding="{Binding Password}"/>
+        <DataGridTemplateColumn Header="Удалить">
+          <DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                    <Button Content="Удалить"
+                            Command="{Binding $parent[DataGrid].DataContext.DeleteUserCommand}"
+                            CommandParameter="{Binding}"/>
+                </DataTemplate>
+            </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+      </DataGrid.Columns>
+    </DataGrid>-->
+  </StackPanel>
+</UserControl>

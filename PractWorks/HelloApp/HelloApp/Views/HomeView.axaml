@@ -1,12 +1,53 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+﻿<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="HelloApp.Views.HomeView">
+    <UserControl.Styles>
+		<Style Selector="TextBlock">
+			<Setter Property="Foreground" Value="Blue"/>
+        </Style>
+        <Style Selector="TextBlock.h1">
+			<Setter Property="FontSize" Value="45"/>
+
+            <Style Selector="^:pointerover"> <!-- ^ - вышестоящий -->
+				<Setter Property="Foreground" Value="Red"/>
+            </Style>
+
+        </Style>
+
+        <Style Selector="Button#myButton">
+		    <Setter Property="Background" Value="Green"/>
+        </Style>
+
+        <Style Selector="StackPanel > TextBlock"> <!-- Все textblock напрямую вложенные в stackpanel-->
+        <!-- Если без >, то работает на любом уровне вложенности. Если > >, то пропускается один элемент вложенности перед textblock-->
+			<Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style Selector="Button /template/ ContentPresenter">
+			<Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style Selector="TextBlock:nth-child(2n+1)">
+			<Setter Property="Background" Value="Gray"/>
+        </Style>
+    </UserControl.Styles>
+
     <StackPanel HorizontalAlignment="Center"
                 VerticalAlignment="Center">
-        <TextBlock Text="{Binding Text}" FontSize="40"/>
-        <Button Content="����� �� ����" Command="{Binding ChangeTextCommand}"/>
+        <TextBlock Text="{Binding Text}" Classes="h1"/>
+
+        <TextBlock Text="qwe" Classes.h1="{Binding IsEnabled}"/>
+        <TextBlock Text="qwe"/>
+        <TextBlock Text="qwe"/>
+        <TextBlock Text="qwe"/>
+        <TextBlock Text="qwe"/>
+
+        <Grid>
+			<TextBlock Text="ASDASD"/>
+        </Grid>
+        <Button x:Name="myButton" Content="Нажми на меня" Command="{Binding ChangeTextCommand}"/>
     </StackPanel>
 </UserControl>

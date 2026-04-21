@@ -1,0 +1,100 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HelloApp.Views.StylesView">
+  <UserControl.Styles>
+	  <Style Selector="Button">
+		  <Setter Property="Background" Value="Orange"/>
+          <Setter Property="FontWeight" Value="Bold"/>
+      </Style>
+      <Style Selector="TextBox#Title">
+		  <Setter Property="Background" Value="LightBlue"/>
+      </Style>
+      <Style Selector="StackPanel > Button">
+		  <Setter Property="Background" Value="Black"/>
+		  <Setter Property="Foreground" Value="White"/>
+          <Setter Property="FontWeight" Value="Bold"/>
+      </Style>
+      <Style Selector="Border.highlight TextBlock">
+          <Setter Property="FontStyle" Value="Italic"/>
+      </Style>
+
+      <Style Selector="Button">
+		  <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Background" Value="Red" />
+          </Style>
+      </Style>
+      <Style Selector="TextBox">
+		  <Style Selector="^:focus /template/ Border#PART_BorderElement">
+			  <Setter Property="BorderBrush" Value="Green"/>
+              <Setter Property="BorderThickness" Value="5"/>
+          </Style>
+      </Style>
+      <Style Selector="ListBoxItem">
+		  <Style Selector="^:selected /template/ ContentPresenter#PART_ContentPresenter">
+			  <Setter Property="Background" Value="LightGreen"/>
+          </Style>
+          <Style Selector="^:nth-child(even)">
+			  <Setter Property="Background" Value="Red"/>
+          </Style>
+      </Style>
+
+      <Style Selector="TextBlock.class1">
+          <Setter Property="Background" Value="Green"/>
+      </Style>
+      <Style Selector="TextBlock.class2">
+          <Setter Property="Background" Value="Pink"/>
+      </Style>
+
+  </UserControl.Styles> 
+  <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+      <Grid.ColumnDefinitions>
+		  <ColumnDefinition/>
+		  <ColumnDefinition/>
+		  <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+		  <RowDefinition/>
+		  <RowDefinition/>
+		  <RowDefinition/>
+      </Grid.RowDefinitions>
+      <StackPanel>
+		  <Button Content="Кнопка1"/>
+          <TextBox Name="asd" FontSize="30" Width="100"/>
+          <TextBox Name="Title" FontSize="30" Width="100"/>
+          <TextBlock Text="asdasd"/>
+          <Border Classes="highlight">
+			  <TextBlock Text="dasdasda"/>
+          </Border>
+          <ListBox>
+            <ListBoxItem Content="asdad"/>
+            <ListBoxItem Content="asdad"/>
+            <ListBoxItem Content="asdad"/>
+            <ListBoxItem Content="asdad"/>
+            <ListBoxItem Content="asdad"/>
+          </ListBox>
+      </StackPanel>
+      <Button Content="Кнопка2" Grid.Column="1"/>
+      <ListBox ItemsSource="{Binding MoneyOperations}"
+               Width="450"
+               HorizontalAlignment="Left"
+               ScrollViewer.VerticalScrollBarVisibility="Visible"
+               MaxHeight="700"
+               Grid.Column="2">
+		  <ListBox.ItemTemplate>
+            <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+             	            Classes.class1="{Binding IsIncome}"
+                            Classes.class2="{Binding !IsIncome}"
+                            Text="{Binding Sum}"/>
+
+                    </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+
+  </Grid>
+</UserControl>

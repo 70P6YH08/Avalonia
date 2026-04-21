@@ -13,5 +13,7 @@ namespace HelloApp.ViewModels
         {
             Text = "Hello Slava";
         }
+
+        public bool IsEnabled = true;
     }
 }

@@ -147,3 +147,5 @@ C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp
 C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp\HelloApp\obj\Debug\net10.0\HelloApp.pdb
 C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp\HelloApp\obj\Debug\net10.0\HelloApp.genruntimeconfig.cache
 C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp\HelloApp\obj\Debug\net10.0\ref\HelloApp.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\obj\Debug\net10.0\HelloApp.sourcelink.json
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Avalonia.Controls.DataGrid.dll
