@@ -8,6 +8,7 @@ namespace HelloApp.Views
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

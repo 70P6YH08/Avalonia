@@ -1,4 +1,3 @@
-using System.Linq;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
@@ -6,11 +5,19 @@ using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
 using HelloApp.ViewModels;
 using HelloApp.Views;
+using Microsoft.Extensions.Configuration;
+using System.Linq;
 
 namespace HelloApp
 {
     public partial class App : Application
     {
+        public static IConfiguration Configuration { get; private set; }
+
+        ConfigurationBuilder builder = new ConfigurationBuilder();
+        builder.AddJsonFile("appsettings.json");
+        Configuration = builder.Build();
+
         public override void Initialize()
         {
             AvaloniaXamlLoader.Load(this);
@@ -44,5 +51,6 @@ namespace HelloApp
                 BindingPlugins.DataValidators.Remove(plugin);
             }
         }
+
     }
 }

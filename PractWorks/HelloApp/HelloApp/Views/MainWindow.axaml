@@ -8,14 +8,23 @@
         xmlns:net="using:System.Net"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HelloApp.Views.MainWindow"
-        x:DataType="vm:HomeViewModel"
+        x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="HelloApp">
     <StackPanel>
-        <local:StylesView/>
+
+        <!--Pr 6-->
+        <!--<local:StylesView/>-->
+            
         <!--<ContentControl Content="{Binding CurrentPage}">
         </ContentControl>
 	    <Button Content="Авторизироваться" Command="{Binding AuthCommand}"/>
 	    <Button Content="Зарегистрироваться" Command="{Binding RegCommand}"/>-->
+
+        <ContentControl Content="{Binding Navigation.CurrentViewModel}">
+        </ContentControl>
+	    <Button Content="Авторизироваться" Command="{Binding AuthCommand}"/>
+	    <Button Content="Зарегистрироваться" Command="{Binding RegCommand}"/>
+	    <Button Content="Назад" Command="{Binding GoBackCommand}"/>
     </StackPanel>
 </Window>

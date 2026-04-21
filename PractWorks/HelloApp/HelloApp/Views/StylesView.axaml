@@ -21,6 +21,8 @@
           <Setter Property="FontStyle" Value="Italic"/>
       </Style>
 
+      <!-- Task 2 -->
+
       <Style Selector="Button">
 		  <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
                 <Setter Property="Background" Value="Red" />
@@ -37,15 +39,26 @@
 			  <Setter Property="Background" Value="LightGreen"/>
           </Style>
           <Style Selector="^:nth-child(even)">
-			  <Setter Property="Background" Value="Red"/>
+			  <Setter Property="Background" Value="LightBlue"/>
           </Style>
       </Style>
 
       <Style Selector="TextBlock.class1">
-          <Setter Property="Background" Value="Green"/>
+          <Setter Property="Foreground" Value="Green"/>
       </Style>
       <Style Selector="TextBlock.class2">
-          <Setter Property="Background" Value="Pink"/>
+          <Setter Property="Foreground" Value="Red"/>
+      </Style>
+
+      <!--Task 4-->
+
+      <Style Selector=":is(Button)">
+		  <Setter Property="Background" Value="Magenta"/>
+      </Style>
+
+      <!-- Task 5 -->
+      <Style Selector="Button[FontSize=16]">
+		  <Setter Property="Foreground" Value="DarkBlue"/>
       </Style>
 
   </UserControl.Styles> 
@@ -61,7 +74,7 @@
 		  <RowDefinition/>
       </Grid.RowDefinitions>
       <StackPanel>
-		  <Button Content="Кнопка1"/>
+		  <Button Content="Кнопка1" FontSize="16"/>
           <TextBox Name="asd" FontSize="30" Width="100"/>
           <TextBox Name="Title" FontSize="30" Width="100"/>
           <TextBlock Text="asdasd"/>
@@ -95,6 +108,5 @@
             </DataTemplate>
         </ListBox.ItemTemplate>
       </ListBox>
-
   </Grid>
 </UserControl>

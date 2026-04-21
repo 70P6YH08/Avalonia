@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PR6_Task6.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:a="clr-namespace:Material.Styles.Assists;assembly=Material.Styles"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PR6_Task6.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="PR6_Task6">
+
+    <StackPanel Width="200" HorizontalAlignment="Left">
+        <TextBlock Text="TextBlock"/>
+        <TextBox a:TextFieldAssist.Label="TextBox"
+		    UseFloatingWatermark="True"
+		    Theme="{StaticResource OutlineTextBox}"
+		    Classes="outline densed"/>
+        <Button Content="Button"/>
+        <CheckBox Content="Да?"/>
+        <RadioButton Content="Нет?"/>
+        <RadioButton Content="Да!"/>
+        <DatePicker/>
+        <ComboBox Theme="{StaticResource MaterialOutlineComboBox}" 
+		    a:ComboBoxAssist.Label="ComboBox" Text="яблоко">
+			<ComboBoxItem Content="Option 1"/>
+			<ComboBoxItem Content="Option 2"/>
+        </ComboBox>
+    </StackPanel>
+</Window>

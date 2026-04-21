@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="HelloApp/HelloApp.csproj" />
+  <Project Path="PR6_Task6/PR6_Task6.csproj" Id="7956a49a-769b-435c-94f3-22006f930021" />
 </Solution>
