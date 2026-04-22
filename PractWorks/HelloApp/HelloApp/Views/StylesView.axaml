@@ -56,10 +56,10 @@
 		  <Setter Property="Background" Value="Magenta"/>
       </Style>
 
-      <!-- Task 5 -->
-      <Style Selector="Button[FontSize=16]">
+       <!--Task 5--> 
+     <!-- <Style Selector="Button[FontSize=16]">
 		  <Setter Property="Foreground" Value="DarkBlue"/>
-      </Style>
+      </Style>-->
 
   </UserControl.Styles> 
   <Grid HorizontalAlignment="Left" VerticalAlignment="Top">

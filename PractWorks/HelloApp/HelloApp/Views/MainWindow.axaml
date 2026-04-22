@@ -26,5 +26,8 @@
 	    <Button Content="Авторизироваться" Command="{Binding AuthCommand}"/>
 	    <Button Content="Зарегистрироваться" Command="{Binding RegCommand}"/>
 	    <Button Content="Назад" Command="{Binding GoBackCommand}"/>
+    
+        <TextBlock Text="{Binding Key}"/>
+
     </StackPanel>
 </Window>

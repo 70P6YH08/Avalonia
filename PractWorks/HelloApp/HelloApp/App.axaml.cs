@@ -3,9 +3,11 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
+using HelloApp.Services;
 using HelloApp.ViewModels;
 using HelloApp.Views;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 
 namespace HelloApp
@@ -14,9 +16,26 @@ namespace HelloApp
     {
         public static IConfiguration Configuration { get; private set; }
 
-        ConfigurationBuilder builder = new ConfigurationBuilder();
-        builder.AddJsonFile("appsettings.json");
-        Configuration = builder.Build();
+        public static ServiceProvider Services { get; private set; }
+
+        public App()
+        {
+            ConfigurationBuilder builder = new ConfigurationBuilder();
+            builder.AddJsonFile("appsettings.json");
+            Configuration = builder.Build();
+            var collection = new ServiceCollection();
+
+            //Добавить сервисы  
+            collection.AddSingleton<MainWindow>();
+            collection.AddTransient<MainWindowViewModel>();
+            collection.AddSingleton<NavigationService>();
+            collection.AddTransient<RegistrationViewModel>();
+            collection.AddTransient<AuthorizationViewModel>();
+
+
+            Services = collection.BuildServiceProvider();
+
+        }
 
         public override void Initialize()
         {

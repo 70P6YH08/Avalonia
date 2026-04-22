@@ -1,0 +1,33 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PractWork7.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PractWork7.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="PractWork7">
+
+    <StackPanel HorizontalAlignment="Left">
+        <TextBox Text="{Binding Login}" Watermark="Логин"/>
+        <TextBox Text="{Binding Password}" Watermark="Пароль" Margin="0,5"/>
+        
+        <Button Content="Создать" Command="{Binding AddUserCommand}"/>
+        <Button Content="Сохранить" Command="{Binding SaveUserCommand}"/>
+        
+        <ListBox ItemsSource="{Binding Users}" Margin="0,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <TextBlock Text="{Binding Login}" Width="100"/>
+                        <Button Content="Изменить" Command="{Binding $parent[Window].DataContext.UpdateUserCommand}"
+                                CommandParameter="{Binding}"/>
+                        <Button Content="Удалить" Command="{Binding $parent[Window].DataContext.DeleteUserCommand}"
+                                CommandParameter="{Binding}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>

@@ -7,7 +7,11 @@ namespace HelloApp.ViewModels
 {
     public partial class MainWindowViewModel : ViewModelBase
     {
+        [ObservableProperty]
+        private string key = App.Configuration.GetSection("ApiKeys")["SomeApi"];
+
         public static NavigationService Navigation { get; set; } = new();
+
 
         [RelayCommand]
         private void GoBack()
@@ -18,13 +22,13 @@ namespace HelloApp.ViewModels
         [RelayCommand]
         private void Auth()
         {
-            Navigation.NavigateTo(new AuthorizationViewModel());
+            Navigation.NavigateTo<AuthorizationViewModel>();
         }
 
         [RelayCommand]
         private void Reg()
         {
-            Navigation.NavigateTo(new RegistrationViewModel());
+            Navigation.NavigateTo<RegistrationViewModel>();
         }
     }
 }

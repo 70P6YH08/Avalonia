@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using HelloApp.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,12 +22,19 @@ namespace HelloApp.Services
             CurrentViewModel = viewModel;
         }
 
-        public void GoBack(int steps = 1)
+        public void GoBack()
         {
-            for (int i = 0; i < steps && stack.Count > 1; i++)
+            for (int i = 0; i < 1 && stack.Count > 1; i++)
                 stack.Pop();
             if (stack.Count > 0)
                 CurrentViewModel = stack.Peek();
         }
+
+        public void NavigateTo<T>(Action<T>? action = null) where T : ViewModelBase
+        {
+            var viewModel = App.Services.GetRequiredService<T>();
+            NavigateTo(viewModel, action);
+        }
+
     }
 }

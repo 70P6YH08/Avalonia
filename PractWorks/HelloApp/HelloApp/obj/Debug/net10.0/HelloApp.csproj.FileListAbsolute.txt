@@ -158,3 +158,14 @@ C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp
 C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\gorbu\Desktop\All\collage\3 year 2 semestr\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\-221\Students\ispp31\Avalonia\PractWorks\HelloApp\HelloApp\bin\Debug\net10.0\appsettings.json
